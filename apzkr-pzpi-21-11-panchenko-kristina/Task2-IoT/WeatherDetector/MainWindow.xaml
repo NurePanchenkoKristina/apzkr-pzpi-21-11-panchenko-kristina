@@ -1,0 +1,23 @@
+﻿<Window x:Class="WeatherDetector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherDetector"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Datetime" HorizontalAlignment="Left" Margin="134,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="HouseId" HorizontalAlignment="Left" Margin="134,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="Temperature" HorizontalAlignment="Left" Margin="134,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Humidity&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Precipitation" HorizontalAlignment="Left" Margin="371,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.767,0.387"/>
+        <DatePicker x:Name="DatetimeInput" HorizontalAlignment="Left" Margin="219,51,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="HouseIdInput" HorizontalAlignment="Left" Margin="219,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" TextChanged="HouseIdInput_TextChanged"/>
+        <TextBox x:Name="TemperatureInput" HorizontalAlignment="Left" Margin="219,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="HumidityInput" HorizontalAlignment="Left" Margin="450,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="PrecipitationInput" HorizontalAlignment="Left" Margin="450,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" TextChanged="PrecipitationInput_TextChanged"/>
+        <Button x:Name="SubmitButton" Content="Submit weather info" HorizontalAlignment="Left" Margin="141,217,0,0" VerticalAlignment="Top" Width="411" Click="SubmitButton_Click"/>
+
+    </Grid>
+</Window>
